@@ -7,9 +7,10 @@
 	.free{
 	background: url(/image/image1.jpeg) center center /cover;
 	height: 750px;
+	display: flex;
 }
 .card{
-padding-top: 70px;
+	padding-top: 70px;
 	margin-left: 500px;
 
 }
@@ -92,7 +93,7 @@ margin-top: 50px;
 	border-radius: 5px;
 	cursor: pointer;
 }
-.bt1:hover{
+/* .bt1:hover{
 	background-color:rgba(0, 255, 255, 0);	
 	color: rgb(246, 4, 4);
 }
@@ -100,7 +101,7 @@ margin-top: 50px;
 	background-color:rgba(16, 143, 233, 0);	
 	font-size: 11px;
 	color: rgb(246, 4, 4);
-}
+} */
 
 
 
@@ -294,6 +295,59 @@ aside header input::placeholder{
 	box-shadow: 3px 3px 2px rgba(103, 98, 98, 0.885);
 }
 
+
+/* deuxiem formulaire */
+
+.formulaire2{
+	border: 1px solid rgb(86, 152, 238);
+	padding: 10px;
+	width: 350px;
+	border-radius: 10px;
+	height: 300px;
+	margin-top: 300px;
+	background-color: rgb(35, 64, 64);
+	display: none;
+}
+.haut{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.haut h4{
+	color: yellow;
+	width: 200px;
+	margin-top: 20px;
+}
+.haut i{
+	font-size: 30px;
+	border-radius: 100%;
+	color:red;
+
+}
+.formulaire2 hr{
+	height: 2px;
+background-color: rgb(120, 115, 115);
+margin-bottom: 10px;
+margin-top: 20px;
+}
+.formulaire2 label{
+	color: rgb(72, 255, 0);
+	padding: 10px;
+	margin-top: 10px;
+}
+.formulaire2 input{
+	height: 30px;
+	width: 350px;
+	margin: 1px;
+	
+}
+.formulaire2 button{
+	padding: 10px;
+	margin-left: 90px;
+	margin-top: 15px;
+	background-color: rgb(156, 153, 152);
+	border-radius: 10px;
+}
 
 
 
