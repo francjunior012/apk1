@@ -13,6 +13,7 @@
 			<article>
 				<h2> INSITEC CLASS V1</h1>
 					<img src="/image/images.jpeg" alt=" logo etablissement">
+					<div class="diag"><p>Lorem, ipsum.</p></div>
 
 					<div>
 						<ul>
@@ -54,55 +55,99 @@
 						</div>
 					<div>
 						<P> INSITEC V1/ Gestion etudiants</P>
-						<button>Ajouter</button>
+						<button class="oui" id="ajouter">Ajouter</button>
 						<input type="search" placeholder="recherche...">
 					</div>
 				</div>
-				<table >
-					<tr>
-							<th>N°</th>
-							<th>Nom</th>
-							<th>Prénom</th>
-							<th>Niveau</th>
-							<th>Spécialité</th>
-							<th>Département</th>
-							<th>Actions</th>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							
-						</tr>
-				</table>
+				<table>
+					<thead>
+					  <th>N°</th>
+					  <th>Nom</th>
+					  <th>Prénom</th>
+					  <th>Niveau</th>
+					  <th>Spécialité</th>
+					  <th>Département</th>
+					  <th>Actions</th>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>1</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>2</td>
+						<td class="action"><button class="supprimer">supprimer</button><button class="supprimer">editer</button></td>
+						
+					   
+	  
+					  </tr>
+					  <tr>
+						<td>2</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>2</td>
+						<td class="action"><button class="supprimer" >supprimer</button> <button class="supprimer">editer</button></td>
+	  
+					  </tr>
+					  <tr>
+						<td>3</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>2</td>
+						<td class="action"><button class="supprimer">supprimer</button> <button class="supprimer">editer</button></td>
+	  
+					  </tr>
+					  <tr>
+						<td>4</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>2</td>
+						<td class="action"><button class="supprimer">supprimer</button> <button class="supprimer">editer</button></td>
+	  
+					  </tr>
+					  <tr>
+						<td>5</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>2</td>
+						<td class="action"><button class="supprimer">supprimer</button> <button class="supprimer">editer</button></td>
+					  </tr>
+					  <!-- <tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					  </tr> -->
+					</tbody>
+	  
+				  </table>	  
+				
 			</aside>
 	</div>
-		<div class="formulaire">
+		<div class="formulaire" id="ouvre">
 				<div class="haut">
 					<div>
 						<h4>OPERATION SUR LES ETUDIANTS</h4>
 					</div>
 					<div>
-						<button><i class="far fa-times"></i></button>
+						<button id="annuler">X</button>
 					</div>
 			</div>
 			<hr>
 			<label for="name">Nom</label> <br>
-			<input type="text" id="name"><br>
+			<input type="text" id="nom"><br>
 			<label for="Prenom">Prenom</label><br>
 			<input type="text" id="Prenom"><br>
 			<label for="niveau"> Niveau</label><br>
@@ -123,12 +168,20 @@
 			<hr>
 			<div>
 				<ul>
-					<li><button class="pr"> valider</button></li>
-					<li><button class="pr1"> valider et continuer</button></li>
-					<li><button class="pr2"> Annuler</button></li>
+					<li><button class="pr" id="valider"> valider</button></li>
+					<li><button class="pr1" id="validerContinuer"> valider et continuer</button></li>
+					<li><button class="pr2" id="off"> Annuler</button></li>
 				</ul>
 			</div>
 		</div>
-	
+		<div class="avertissement" style="display:none;" id="avertissement">
+			<h3>Voulez-vous vraiment supprimer?</h3>
+			<div>
+			  <button class="bnt-oui" id="supprimer" >OUI</button>
+			  <button class="bnt-non" id="non">NON</button>
+			</div>
+		  </div>
+		<script src="/fichier javascropt/pages.js"></script>
+		
 </body>
 </html>

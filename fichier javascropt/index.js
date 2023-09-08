@@ -9,19 +9,25 @@ fetch("fichier json/fichier.json").then(value => value.json()).then(etudiants =>
   localStorage.setItem("etudiants", tableau);
 });
 // uliser le click au bouton
+// OUVRIR ET FERMER LE FORMULAIRE
+
+// formulaire d'inscription
 fermer.addEventListener("click", function () {
-	form.style.display = "none";
-})
-btnPassword.addEventListener("click", function () {
-	form.style.display = "block";
+  form.style.display = "none";
 });
+btnPassword.addEventListener("click", function () {
+  form.style.display = "block";
+});
+
+// soummetre les information au bouton
 btnLogin.addEventListener("click", function() {
   var nom = inputName.value;
 	var MDP = inputPassword.value;
 	// verifier si un champs est vide
 	if (nom === "" || MDP === "") {
 		alert(`veillez remplir les champs vides `);
-	} else {
+  }
+  else {
 		// declaration de la variable locale 
     var donner = JSON.parse(localStorage.getItem("etudiants"));
 // verifier si le nom ou le prenom se retouve dans le json
@@ -37,7 +43,7 @@ btnLogin.addEventListener("click", function() {
 		window.location.href = 'pages.html ';
 		
     } else {
-	//   message.style.display = "block";
+	message.style.display = "block";
     }
   }
 });
@@ -59,9 +65,7 @@ btnPassword.addEventListener("mouseover", () => {
 btnPassword.addEventListener("mouseout", () => {
 	btnPassword.style.backgroundColor = "aqua";
 	btnPassword.style.color = "black";
-	btnPassword.style.cursor="alias";
-})
-// btnPassword.addEventListener("click", (){
-// form.style.display = "block";
-// })
-// message.style.display = "block";
+	btnPassword.style.cursor = "alias";
+});
+
+

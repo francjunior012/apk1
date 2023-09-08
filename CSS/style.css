@@ -93,15 +93,7 @@ margin-top: 50px;
 	border-radius: 5px;
 	cursor: pointer;
 }
-/* .bt1:hover{
-	background-color:rgba(0, 255, 255, 0);	
-	color: rgb(246, 4, 4);
-}
-.bt2:hover{
-	background-color:rgba(16, 143, 233, 0);	
-	font-size: 11px;
-	color: rgb(246, 4, 4);
-} */
+
 
 
 
@@ -130,6 +122,10 @@ box-shadow: 8px 4px 3px rgba(79, 78, 78, 0.549);
 	margin: 19px;
 	margin-left: 40px;
 	border-radius: 40%;
+}
+.diag{
+	margin-left: 40px;
+	color: white;
 }
 .bach li{
 	list-style: none;
@@ -197,24 +193,70 @@ aside header input::placeholder{
 	color: black;
 	font-size: 15px;
 }
- th{
-	padding: 60px;
-	margin: 40px;
-	
+
+/* tableau  */
+table{
+    width: 1220px;
+    margin-top: 100px;
+    margin-left: 20px;
 }
+thead{
+    background-color: rgb(13, 229, 214);
+    color: white;
+	padding: 10px;
+}
+th{
+    font-size: 27px;
+}
+tbody{
+    height: 100px;
+    width: 140px;
+    padding: 50px;
+    background-color: #eee;
+}
+tr{
+    height: 50px;
+}
+td{
+    padding-left: 5px;
+}
+.supprimer{
+margin-right: 10px;
+padding: 5px;
+background-color: #746969;
+color: white;
+width: 80px;
+cursor: pointer;
+border-radius: 5px;
+box-shadow: 3px 3px 2px rgba(103, 98, 98, 0.885);
+}
+.action{
+    width: 200px;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
 /* formulaire */
 
 .formulaire{
+	position: absolute;
 	border: 1px solid rgb(86, 152, 238);
 	padding: 10px;
 	width: 520px;
 	border-radius: 10px;
 	height: 660px;
-	margin-left: 500px;
+	margin-left: 600px;
 	margin-bottom: 200px;
+	display: none;
+	top: 300px;
+	background-color: rgb(195, 200, 200);
 }
 .formulaire hr{
 	height: 3px;
@@ -227,10 +269,11 @@ aside header input::placeholder{
 	justify-content: space-between;
 	padding: 20px;
 }
-.haut i{
+.haut button{
 	font-size: 30px;
-	border-radius: 100%;
-	color:red;
+	color:rgb(13, 13, 13);
+	width: 50px;
+	border-radius: 10%;
 
 }
 .formulaire label{
@@ -308,21 +351,15 @@ aside header input::placeholder{
 	background-color: rgb(35, 64, 64);
 	display: none;
 }
-.haut{
+.haut2{
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
 }
-.haut h4{
+.haut2 h4{
 	color: yellow;
 	width: 200px;
 	margin-top: 20px;
-}
-.haut i{
-	font-size: 30px;
-	border-radius: 100%;
-	color:red;
-
 }
 .formulaire2 hr{
 	height: 2px;
@@ -348,6 +385,36 @@ margin-top: 20px;
 	background-color: rgb(156, 153, 152);
 	border-radius: 10px;
 }
-
-
+/* avertissement */
+.avertissement{
+    background: #10e4fb;
+    text-align: center;
+    display: flex;
+    height: 10vh;
+    width: 50vh;
+    border-radius: 9px;
+    position: absolute;
+	top: 600px;
+    margin-left: 700px;
+    bottom: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.avertissement button{
+    margin-top: 30px;
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+}
+.bnt-oui{
+    background-color: rgb(30, 50, 127);
+	color: black;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.bnt-non{
+    background-color: rgb(243, 5, 5);
+    color: white;
+    cursor: pointer;
+}
 
